@@ -10,9 +10,13 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #fff;
+  background: #e5e5e5;
   color: #000;
   -webkit-font-smoothing: antialiased;
 }
@@ -37,9 +41,9 @@ body {
 }
 
 @media (display-mode: standalone) {
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
+  .mobile-container {
+    max-width: 100% !important;
+    box-shadow: none !important;
   }
 }
 
