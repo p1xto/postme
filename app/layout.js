@@ -27,8 +27,11 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       </head>
-      <body className="min-h-screen bg-white">
-        {children}
+      <body className="min-h-screen">
+        {/* 모바일 해상도 고정 컨테이너 */}
+        <div className="mobile-container max-w-[430px] mx-auto min-h-screen bg-white shadow-2xl">
+          {children}
+        </div>
       </body>
     </html>
   )
